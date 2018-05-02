@@ -1,0 +1,178 @@
+1525182678a:1:{s:12:"products.htm";a:11:{s:8:"fileName";s:12:"products.htm";s:7:"content";s:3436:"title = "主要产品"
+url = "/product/:slug?"
+layout = "main"
+meta_title = "主要产品"
+meta_description = "和德主要产品"
+is_hidden = 0
+==
+<?php
+use RainLab\Blog\Models\Category;
+use RainLab\Blog\Models\Post;
+function onStart(){
+    $slug = $this->param('slug');
+    if(!$slug){
+        return redirect('product/road');    
+    }
+    //$tree = Category::where('slug','products')->get();
+    $categories = Category::getNested();
+    $allChildren = $categories->where('slug','products')->first();
+    $this['children'] = $allChildren->children;
+    $this['slug'] = $slug;
+    $currentCategory = Category::where('slug',$slug)->first();
+    $this['productList'] = $currentCategory->posts_noscope;
+    $this['category'] = $currentCategory;
+}
+
+function onGetArticle(){
+    $id = input('id');
+    if(!$id){
+        throw new ApplicationException('Invalid value');
+    }
+    
+    $post = Post::findOrFail($id);
+    
+    $this['data'] = ['title'=>$post->title,'summary'=>$post->summary,'content'=>$post->content,'thumb'=>$post->featured_images];
+}
+?>
+==
+<div class='banner' style="background-image: url('/themes/hd/assets/images/inside-product-header.png')">
+    <div class='inner'>
+        <h2 class='main-title'>{{ this.page.title }}</h2>
+        <h2 class='secondary-title'>{{ category.name }}</h2>
+    </div>
+</div>
+
+    <div class="am-container">
+        <ol class="am-breadcrumb am-breadcrumb-slash">
+            <li>
+                <a href="/">首页</a>
+            </li>
+            <li>
+                <a href="{{this.page.name}}">{{this.page.title}}</a>
+            </li>
+            <li class="am-active">{{ category.name }}</li>
+        </ol>
+    </div>
+    <div class="am-container scroll">
+        <ul class="am-avg-sm-2 am-avg-md-6 product-tab">
+        {% for item in children %}
+            <li class="tab-item {{ slug and slug == item.slug ? 'active' : '' }}">
+                <div class="icon"></div>
+                <a href='{{ 'products'|page({ slug:item.slug }) }}'>{{ item.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="am-container">
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-lg-2">
+                <ul class="am-list text-indent am-padding-top-lg product-list">
+                {% for product in productList %}
+                    <li>
+                        <a href="javascript:;" data-request='onGetArticle' data-request-update="productContent: '#product-update-area'" data-request-data='id:{{ product.id }}'>{{ product.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div class="am-u-sm-12 am-u-lg-10">
+                <div class="am-g am-padding-top-lg am-padding-left-lg product-padding" id='product-update-area'>                    
+                </div>
+            </div>
+            {% if productList.count < 1%}
+                <div class='am-u-sm-12 am-u-md-12'><div class='am-alert am-alert-secondary'><i class='am-icon-warning'></i> 暂无</div></div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <script>
+    
+    window.onload = function(){
+        $('.product-list a').click(function(){
+            $('.product-list li').removeClass('active')
+            $(this).parent().addClass('active')
+            }).eq(0).click()
+    }
+    </script>";s:5:"mtime";i:1525157796;s:6:"markup";s:2345:"<div class='banner' style="background-image: url('/themes/hd/assets/images/inside-product-header.png')">
+    <div class='inner'>
+        <h2 class='main-title'>{{ this.page.title }}</h2>
+        <h2 class='secondary-title'>{{ category.name }}</h2>
+    </div>
+</div>
+
+    <div class="am-container">
+        <ol class="am-breadcrumb am-breadcrumb-slash">
+            <li>
+                <a href="/">首页</a>
+            </li>
+            <li>
+                <a href="{{this.page.name}}">{{this.page.title}}</a>
+            </li>
+            <li class="am-active">{{ category.name }}</li>
+        </ol>
+    </div>
+    <div class="am-container scroll">
+        <ul class="am-avg-sm-2 am-avg-md-6 product-tab">
+        {% for item in children %}
+            <li class="tab-item {{ slug and slug == item.slug ? 'active' : '' }}">
+                <div class="icon"></div>
+                <a href='{{ 'products'|page({ slug:item.slug }) }}'>{{ item.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="am-container">
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-lg-2">
+                <ul class="am-list text-indent am-padding-top-lg product-list">
+                {% for product in productList %}
+                    <li>
+                        <a href="javascript:;" data-request='onGetArticle' data-request-update="productContent: '#product-update-area'" data-request-data='id:{{ product.id }}'>{{ product.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div class="am-u-sm-12 am-u-lg-10">
+                <div class="am-g am-padding-top-lg am-padding-left-lg product-padding" id='product-update-area'>                    
+                </div>
+            </div>
+            {% if productList.count < 1%}
+                <div class='am-u-sm-12 am-u-md-12'><div class='am-alert am-alert-secondary'><i class='am-icon-warning'></i> 暂无</div></div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <script>
+    
+    window.onload = function(){
+        $('.product-list a').click(function(){
+            $('.product-list li').removeClass('active')
+            $(this).parent().addClass('active')
+            }).eq(0).click()
+    }
+    </script>";s:4:"code";s:919:"use RainLab\Blog\Models\Category;
+use RainLab\Blog\Models\Post;
+function onStart(){
+    $slug = $this->param('slug');
+    if(!$slug){
+        return redirect('product/road');    
+    }
+    //$tree = Category::where('slug','products')->get();
+    $categories = Category::getNested();
+    $allChildren = $categories->where('slug','products')->first();
+    $this['children'] = $allChildren->children;
+    $this['slug'] = $slug;
+    $currentCategory = Category::where('slug',$slug)->first();
+    $this['productList'] = $currentCategory->posts_noscope;
+    $this['category'] = $currentCategory;
+}
+
+function onGetArticle(){
+    $id = input('id');
+    if(!$id){
+        throw new ApplicationException('Invalid value');
+    }
+    
+    $post = Post::findOrFail($id);
+    
+    $this['data'] = ['title'=>$post->title,'summary'=>$post->summary,'content'=>$post->content,'thumb'=>$post->featured_images];
+}";s:5:"title";s:12:"主要产品";s:3:"url";s:15:"/product/:slug?";s:6:"layout";s:4:"main";s:10:"meta_title";s:12:"主要产品";s:16:"meta_description";s:18:"和德主要产品";s:9:"is_hidden";s:1:"0";}}

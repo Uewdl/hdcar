@@ -1,0 +1,83 @@
+1525182678a:1:{s:14:"core-skill.htm";a:7:{s:8:"fileName";s:14:"core-skill.htm";s:7:"content";s:1311:"[viewBag]
+title = "核心技术"
+url = "/core/skill"
+layout = "static-layout-free"
+is_hidden = 0
+navigation_hidden = 0
+==
+<h1 style="text-align: center;"><strong>核心技术</strong></h1>
+<div class="product" style="background:none">
+	<div class="am-g">
+		<div class="product-item am-u-sm-12 am-u-lg-4">
+			<div class="cover"><img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img1.jpg" alt="" class="fr-fic fr-dii"></div>
+
+			<p class="caption"><a href="/core/skill/yetaimoduan">液态模锻</a></p>
+
+			<p>卧式&amp;立式液态模锻装备</p>
+		</div>
+		<div class="product-item am-u-sm-12 am-u-lg-4">
+			<div class="cover"><img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img2.jpg" alt="" class="fr-fic fr-dii"></div>
+
+			<p class="caption"><a href="/core/skill/bangutaijiyazhuzao">半固态挤压铸造</a></p>
+
+			<p>适合应用于高强度、耐疲劳及高导热的产业上</p>
+		</div>
+		<div class="product-item am-u-sm-12 am-u-lg-4">
+			<div class="cover"><img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img3.jpg" alt="" class="fr-fic fr-dii"></div>
+
+			<p class="caption"><a href="/core/skill/pmlfuhejiaxin">泡沫铝复合夹芯</a></p>
+
+			<p>适合应用于抗冲击、高防护的产业上</p>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1525165189;s:6:"markup";s:1182:"<h1 style="text-align: center;"><strong>核心技术</strong></h1>
+<div class="product" style="background:none">
+	<div class="am-g">
+		<div class="product-item am-u-sm-12 am-u-lg-4">
+			<div class="cover"><img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img1.jpg" alt="" class="fr-fic fr-dii"></div>
+
+			<p class="caption"><a href="/core/skill/yetaimoduan">液态模锻</a></p>
+
+			<p>卧式&amp;立式液态模锻装备</p>
+		</div>
+		<div class="product-item am-u-sm-12 am-u-lg-4">
+			<div class="cover"><img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img2.jpg" alt="" class="fr-fic fr-dii"></div>
+
+			<p class="caption"><a href="/core/skill/bangutaijiyazhuzao">半固态挤压铸造</a></p>
+
+			<p>适合应用于高强度、耐疲劳及高导热的产业上</p>
+		</div>
+		<div class="product-item am-u-sm-12 am-u-lg-4">
+			<div class="cover"><img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img3.jpg" alt="" class="fr-fic fr-dii"></div>
+
+			<p class="caption"><a href="/core/skill/pmlfuhejiaxin">泡沫铝复合夹芯</a></p>
+
+			<p>适合应用于抗冲击、高防护的产业上</p>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:12:"核心技术";s:3:"url";s:11:"/core/skill";s:6:"layout";s:18:"static-layout-free";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:1182:"<h1 style="text-align: center;"><strong>核心技术</strong></h1>
+<div class="product" style="background:none">
+	<div class="am-g">
+		<div class="product-item am-u-sm-12 am-u-lg-4">
+			<div class="cover"><img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img1.jpg" alt="" class="fr-fic fr-dii"></div>
+
+			<p class="caption"><a href="/core/skill/yetaimoduan">液态模锻</a></p>
+
+			<p>卧式&amp;立式液态模锻装备</p>
+		</div>
+		<div class="product-item am-u-sm-12 am-u-lg-4">
+			<div class="cover"><img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img2.jpg" alt="" class="fr-fic fr-dii"></div>
+
+			<p class="caption"><a href="/core/skill/bangutaijiyazhuzao">半固态挤压铸造</a></p>
+
+			<p>适合应用于高强度、耐疲劳及高导热的产业上</p>
+		</div>
+		<div class="product-item am-u-sm-12 am-u-lg-4">
+			<div class="cover"><img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img3.jpg" alt="" class="fr-fic fr-dii"></div>
+
+			<p class="caption"><a href="/core/skill/pmlfuhejiaxin">泡沫铝复合夹芯</a></p>
+
+			<p>适合应用于抗冲击、高防护的产业上</p>
+		</div>
+	</div>
+</div>";}}

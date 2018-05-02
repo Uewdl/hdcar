@@ -1,0 +1,21 @@
+static-pages:
+    about:
+        about-intro: {  }
+        about-structrue: {  }
+        about-partner: {  }
+        about-responsibility: {  }
+        about-responsibility-2: {  }
+    core:
+        core-skill:
+            core-skill-bangutaijiyazhuzao: {  }
+            core-skill-yetaimoduan: {  }
+            core-skill-pmlfuhejiaxin: {  }
+        core-capability: {  }
+        core-quality: {  }
+        core-plans: {  }
+    resource:
+        resource-life: {  }
+        resource-trust: {  }
+        resource-join: {  }
+    support: {  }
+    hede: {  }

@@ -1,0 +1,55 @@
+1525182698a:1:{s:20:"newslist/default.htm";a:6:{s:8:"fileName";s:20:"newslist/default.htm";s:7:"content";s:1200:"[viewBag]
+==
+{% set posts = __SELF__.posts %}
+<div class="am-u-lg-7 am-u-sm-12">
+                <ul class="am-list i-am-list news-list">
+                    {% for post in posts %}
+<li class="am-cf">
+                        <a href="{{ post.url }}" title='{{ post.title }}'>{{ post.title }}
+                            <span class='am-text-right am-fr date'>{{ post.published_at|date('Y/m/d') }}</span>
+                        </a>                        
+                        <p class=" text-indent">{{ post.summary|raw }}</p>
+                        <span class="border-2-dashed"></span>
+                    </li>
+{% else %}
+        <li class="no-data">{{ noPostsMessage }}</li>
+{% endfor %}
+                </ul>
+            </div>
+            <div class="am-u-lg-4 am-u-sm-12">
+            {% if posts[0].featured_images.count %}
+                <p>
+                    <img src="{{ posts[0].featured_images[0].path }}" style='max-width:100%'>
+                </p>
+            {% else %}
+             <p>
+                    <img src="/themes/hd/assets/images/placeholder.gif" style='max-width:100%'>
+                </p>
+            {% endif %}
+            </div>";s:5:"mtime";i:1525084317;s:6:"markup";s:1185:"{% set posts = __SELF__.posts %}
+<div class="am-u-lg-7 am-u-sm-12">
+                <ul class="am-list i-am-list news-list">
+                    {% for post in posts %}
+<li class="am-cf">
+                        <a href="{{ post.url }}" title='{{ post.title }}'>{{ post.title }}
+                            <span class='am-text-right am-fr date'>{{ post.published_at|date('Y/m/d') }}</span>
+                        </a>                        
+                        <p class=" text-indent">{{ post.summary|raw }}</p>
+                        <span class="border-2-dashed"></span>
+                    </li>
+{% else %}
+        <li class="no-data">{{ noPostsMessage }}</li>
+{% endfor %}
+                </ul>
+            </div>
+            <div class="am-u-lg-4 am-u-sm-12">
+            {% if posts[0].featured_images.count %}
+                <p>
+                    <img src="{{ posts[0].featured_images[0].path }}" style='max-width:100%'>
+                </p>
+            {% else %}
+             <p>
+                    <img src="/themes/hd/assets/images/placeholder.gif" style='max-width:100%'>
+                </p>
+            {% endif %}
+            </div>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

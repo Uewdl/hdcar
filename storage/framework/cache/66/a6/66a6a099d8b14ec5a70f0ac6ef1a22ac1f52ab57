@@ -1,0 +1,23 @@
+1525183024a:1:{s:18:"productContent.htm";a:6:{s:8:"fileName";s:18:"productContent.htm";s:7:"content";s:566:"[viewBag]
+==
+<div class="am-u-sm-12 am-u-lg-7">
+                        <h1>{{ data.title }}</h1>
+                        {{ data.content|md }}
+                    </div>
+                    <div class="am-u-sm-12 am-u-lg-4 am-u-lg-offset-1 product-img">
+                        {% if data.thumb.count > 0 %}
+                            <img src='{{ data.thumb[0].path }}'/>
+                        {% else %}
+                            <img src='/themes/hd/assets/images/placeholder.gif'/>
+                        {% endif %}
+                    </div>";s:5:"mtime";i:1525154457;s:6:"markup";s:551:"<div class="am-u-sm-12 am-u-lg-7">
+                        <h1>{{ data.title }}</h1>
+                        {{ data.content|md }}
+                    </div>
+                    <div class="am-u-sm-12 am-u-lg-4 am-u-lg-offset-1 product-img">
+                        {% if data.thumb.count > 0 %}
+                            <img src='{{ data.thumb[0].path }}'/>
+                        {% else %}
+                            <img src='/themes/hd/assets/images/placeholder.gif'/>
+                        {% endif %}
+                    </div>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

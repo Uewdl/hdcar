@@ -1,0 +1,13 @@
+[viewBag]
+==
+<div class="am-u-sm-12 am-u-lg-7">
+                        <h1>{{ data.title }}</h1>
+                        {{ data.content|md }}
+                    </div>
+                    <div class="am-u-sm-12 am-u-lg-4 am-u-lg-offset-1 product-img">
+                        {% if data.thumb.count > 0 %}
+                            <img src='{{ data.thumb[0].path }}'/>
+                        {% else %}
+                            <img src='/themes/hd/assets/images/placeholder.gif'/>
+                        {% endif %}
+                    </div>

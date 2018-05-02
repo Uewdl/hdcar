@@ -1,0 +1,355 @@
+1525182678a:1:{s:9:"index.htm";a:10:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:8229:"title = "home"
+url = "/"
+layout = "main"
+is_hidden = 0
+
+[blogPosts newslist]
+pageNumber = "{{ :page }}"
+categoryFilter = "latest-news"
+postsPerPage = 2
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "index"
+postPage = "news"
+==
+<div class="swiper-container gallery">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <!-- <div class="slide-inner">
+                <h2 class='am-text-white'>Hello,world</h2>
+            </div> -->
+            <img src="/themes/hd/assets/images/banner.jpg" />
+        </div>
+       <!--  <div class="swiper-slide">
+           <img src="https://www.hodakatec.com/data/files/home/gallery/1483610725943437381.jpg" />
+       </div> -->
+    </div>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+    <div class="am-container">
+        <p class="am-text-primary am-text-center i-caption">COMPANY PROFILE</p>
+        <div class='i-caption-complex'>
+            <span class="i-caption am-text-primary am-text-center">广州和德</span>
+        </div>
+
+        <div class="am-g img-max-100">
+            <div class="am-u-lg-5 am-u-sm-12">
+                <p>
+                    <img src="/themes/hd/assets/css/about-hede-home.jpg">
+                </p>
+            </div>
+            <div class="am-u-lg-7 am-u-sm-12 text-indent">
+               {% content 'static-pages/hede' %}
+            </div>
+        </div>
+
+        <p class="am-text-primary am-text-center i-caption">NEWS CENTER</p>
+        <div class='i-caption-complex'>
+            <span class="i-caption am-text-primary am-text-center">最新消息</span>
+        </div>
+
+        <div class="am-g img-max-100">
+            {% component 'newslist' %}    
+        </div>
+    </div>
+    <div class="product">
+        <div class="am-container">
+            <div class="am-g">
+                <div class="product-item am-u-sm-12 am-u-lg-3">
+                    <div class="cover">
+                        <img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img1.jpg" alt="">
+                    </div>
+                    <p class="caption">400T液态模锻设备列</p>
+                    <p class="summary">HVSC400T卧式</p>
+                </div>
+                <div class="product-item am-u-sm-12 am-u-lg-3">
+                    <div class="cover">
+                        <img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img2.jpg" alt="">
+                    </div>
+                    <p class="caption">650T液态模锻设备</p>
+                    <p class="summary">VSC650T立式</p>
+                </div>
+                <div class="product-item am-u-sm-12 am-u-lg-3">
+                    <div class="cover">
+                        <img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img3.jpg" alt="">
+                    </div>
+                    <p class="caption">800T液态模锻设备</p>
+                    <p class="summary">HVSC800T卧式&HVSC800T立式</p>
+                </div>
+                <div class="product-item am-u-sm-12 am-u-lg-3">
+                    <div class="cover">
+                        <img src="/themes/hd/assets/images/1469502978920535.jpg" alt="">
+                    </div>
+                    <p class="caption">1250T液态模锻设备</p>
+                    <p class="summary">HVSC1250T卧式&HVSC1250T立式</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="am-container sm-no-padding">
+        <p class="am-text-primary am-text-center i-caption">PRODUCT APPLICATION</p>
+        <div class='i-caption-complex'>
+            <span class="i-caption am-text-primary am-text-center">产品应用</span>
+        </div>
+
+        <div class='scroll'>
+            <ul class="transform-square am-cf">
+                <div class="am-g">
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li>
+                            <a href="{{ 'product/track'|app }}" class="icon" title='轨道交通'>
+                                <img src="/themes/hd/assets/images/product-icon-1.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform1.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li class="fall">
+                            <a href="{{ 'product/health'|app }}" class="icon" title='健康运动'>
+                                <img src="/themes/hd/assets/images/product-icon-2.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform2.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li>
+                            <a href="{{ 'product/road'|app }}" class="icon" title='公路运输'>
+                                <img src="/themes/hd/assets/images/product-icon-3.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform3.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li class="fall">
+                            <a href="{{ 'product/communication'|app }}" class="icon" title='通讯'>
+                                <img src="/themes/hd/assets/images/product-icon-4.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform4.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li>
+                            <a href="{{ 'product/machine'|app }}" class="icon" title='机械'>
+                                <img src="/themes/hd/assets/images/product-icon-5.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform-5.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li class="fall">
+                            <a href="{{ 'product/product-other'|app }}" class="icon" title='其他'>
+                                <img src="/themes/hd/assets/images/product-icon-6.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform-6.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+   <script type="text/javascript">
+    window.onload = function(){
+         var swiper = new Swiper('.gallery',{
+             autoplay:true,
+             effect:'fade',
+             loop:true,
+             autoHeight:true,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+             })
+    }
+    </script>";s:5:"mtime";i:1525173824;s:6:"markup";s:7953:"<div class="swiper-container gallery">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <!-- <div class="slide-inner">
+                <h2 class='am-text-white'>Hello,world</h2>
+            </div> -->
+            <img src="/themes/hd/assets/images/banner.jpg" />
+        </div>
+       <!--  <div class="swiper-slide">
+           <img src="https://www.hodakatec.com/data/files/home/gallery/1483610725943437381.jpg" />
+       </div> -->
+    </div>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+    <div class="am-container">
+        <p class="am-text-primary am-text-center i-caption">COMPANY PROFILE</p>
+        <div class='i-caption-complex'>
+            <span class="i-caption am-text-primary am-text-center">广州和德</span>
+        </div>
+
+        <div class="am-g img-max-100">
+            <div class="am-u-lg-5 am-u-sm-12">
+                <p>
+                    <img src="/themes/hd/assets/css/about-hede-home.jpg">
+                </p>
+            </div>
+            <div class="am-u-lg-7 am-u-sm-12 text-indent">
+               {% content 'static-pages/hede' %}
+            </div>
+        </div>
+
+        <p class="am-text-primary am-text-center i-caption">NEWS CENTER</p>
+        <div class='i-caption-complex'>
+            <span class="i-caption am-text-primary am-text-center">最新消息</span>
+        </div>
+
+        <div class="am-g img-max-100">
+            {% component 'newslist' %}    
+        </div>
+    </div>
+    <div class="product">
+        <div class="am-container">
+            <div class="am-g">
+                <div class="product-item am-u-sm-12 am-u-lg-3">
+                    <div class="cover">
+                        <img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img1.jpg" alt="">
+                    </div>
+                    <p class="caption">400T液态模锻设备列</p>
+                    <p class="summary">HVSC400T卧式</p>
+                </div>
+                <div class="product-item am-u-sm-12 am-u-lg-3">
+                    <div class="cover">
+                        <img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img2.jpg" alt="">
+                    </div>
+                    <p class="caption">650T液态模锻设备</p>
+                    <p class="summary">VSC650T立式</p>
+                </div>
+                <div class="product-item am-u-sm-12 am-u-lg-3">
+                    <div class="cover">
+                        <img src="https://www.hodakatec.com/themes/zh-tw/assets/images/img3.jpg" alt="">
+                    </div>
+                    <p class="caption">800T液态模锻设备</p>
+                    <p class="summary">HVSC800T卧式&HVSC800T立式</p>
+                </div>
+                <div class="product-item am-u-sm-12 am-u-lg-3">
+                    <div class="cover">
+                        <img src="/themes/hd/assets/images/1469502978920535.jpg" alt="">
+                    </div>
+                    <p class="caption">1250T液态模锻设备</p>
+                    <p class="summary">HVSC1250T卧式&HVSC1250T立式</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="am-container sm-no-padding">
+        <p class="am-text-primary am-text-center i-caption">PRODUCT APPLICATION</p>
+        <div class='i-caption-complex'>
+            <span class="i-caption am-text-primary am-text-center">产品应用</span>
+        </div>
+
+        <div class='scroll'>
+            <ul class="transform-square am-cf">
+                <div class="am-g">
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li>
+                            <a href="{{ 'product/track'|app }}" class="icon" title='轨道交通'>
+                                <img src="/themes/hd/assets/images/product-icon-1.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform1.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li class="fall">
+                            <a href="{{ 'product/health'|app }}" class="icon" title='健康运动'>
+                                <img src="/themes/hd/assets/images/product-icon-2.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform2.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li>
+                            <a href="{{ 'product/road'|app }}" class="icon" title='公路运输'>
+                                <img src="/themes/hd/assets/images/product-icon-3.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform3.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li class="fall">
+                            <a href="{{ 'product/communication'|app }}" class="icon" title='通讯'>
+                                <img src="/themes/hd/assets/images/product-icon-4.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform4.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li>
+                            <a href="{{ 'product/machine'|app }}" class="icon" title='机械'>
+                                <img src="/themes/hd/assets/images/product-icon-5.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform-5.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                    <div class="am-u-sm-6 am-u-lg-2 square-item">
+                        <li class="fall">
+                            <a href="{{ 'product/product-other'|app }}" class="icon" title='其他'>
+                                <img src="/themes/hd/assets/images/product-icon-6.png" alt="">
+                            </a>
+                            <div class="cover">
+                                <img src="/themes/hd/assets/images/transform-6.jpg" alt="">
+                            </div>
+                            <div class="shadow"></div>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+   <script type="text/javascript">
+    window.onload = function(){
+         var swiper = new Swiper('.gallery',{
+             autoplay:true,
+             effect:'fade',
+             loop:true,
+             autoHeight:true,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+             })
+    }
+    </script>";s:4:"code";N;s:5:"title";s:4:"home";s:3:"url";s:1:"/";s:6:"layout";s:4:"main";s:9:"is_hidden";s:1:"0";s:18:"blogPosts newslist";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:11:"latest-news";s:12:"postsPerPage";s:1:"2";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:5:"index";s:8:"postPage";s:4:"news";}}}

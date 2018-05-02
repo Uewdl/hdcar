@@ -1,0 +1,35 @@
+[viewBag]
+==
+{% set post = __SELF__.post %}
+
+<div class="content">{{ post.content_html|raw }}</div>
+
+{% if post.featured_images.count %}
+<hr/>
+<h5><i class='am-icon-camera-retro'></i> 图片集</h5>
+    <div class="featured-images text-center">
+    <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+  <ul class="am-slides">
+    {% for image in post.featured_images %}
+            <li>
+                <img
+                    data-src="{{ image.filename }}"
+                    src="{{ image.path }}"
+                    alt="{{ image.description }}"
+                    style="max-width: 100%" />
+            </li>
+        {% endfor %}
+  </ul>
+</div>        
+    </div>
+{% endif %}
+
+<!-- <p class="info">
+    Posted
+    {% if post.categories.count %} in
+        {% for category in post.categories %}
+            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    {% endif %}
+    on {{ post.published_at|date('M d, Y') }}
+</p> -->

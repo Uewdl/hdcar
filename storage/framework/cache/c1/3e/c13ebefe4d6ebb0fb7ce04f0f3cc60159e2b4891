@@ -1,0 +1,73 @@
+1525182678a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:1161:"[viewBag]
+==
+<div class='footer-inner'>
+<div class='am-g'>
+<div class='am-u-sm-12 am-u-md-5'>
+            <p>广州和德汽车零部件技术有限公司</p>
+            <p>公司地址：广东省广州市增城区经济技术开发区新和北路38号</p>
+            <p>电话：020-32161635</p>
+</div>
+<div class='am-u-sm-12 am-u-md-4 am-u-end'>
+        <p>Copyright©2016 和德汽车 All Rights Reserved</p>
+        <p>粤ICP备16064447</p>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="//js.users.51.la/19471649.js"></script>
+<script>
+$(function(){
+    var scroller = $('.scroller')
+    
+    scroller.each(function(){
+        $(this).html('<div class="swiper-wrapper"><div class="swiper-slide" style="height:auto">'+this.innerHTML+'</div></div><div class="swiper-scrollbar"></div>')
+        var height = $(this).data('height') || 300
+        $(this).height(height)
+    })
+    
+    var swiper = new Swiper('.scroller', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      freeMode: true,
+      mousewheel: true
+    });
+
+})
+</script>";s:5:"mtime";i:1525162795;s:6:"markup";s:1146:"<div class='footer-inner'>
+<div class='am-g'>
+<div class='am-u-sm-12 am-u-md-5'>
+            <p>广州和德汽车零部件技术有限公司</p>
+            <p>公司地址：广东省广州市增城区经济技术开发区新和北路38号</p>
+            <p>电话：020-32161635</p>
+</div>
+<div class='am-u-sm-12 am-u-md-4 am-u-end'>
+        <p>Copyright©2016 和德汽车 All Rights Reserved</p>
+        <p>粤ICP备16064447</p>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="//js.users.51.la/19471649.js"></script>
+<script>
+$(function(){
+    var scroller = $('.scroller')
+    
+    scroller.each(function(){
+        $(this).html('<div class="swiper-wrapper"><div class="swiper-slide" style="height:auto">'+this.innerHTML+'</div></div><div class="swiper-scrollbar"></div>')
+        var height = $(this).data('height') || 300
+        $(this).height(height)
+    })
+    
+    var swiper = new Swiper('.scroller', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      freeMode: true,
+      mousewheel: true
+    });
+
+})
+</script>";s:4:"code";N;s:7:"viewBag";a:0:{}}}
